@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headerscan" >
+
+        <Button
+            android:id="@+id/back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:text="Event List"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        
+
+        
+
+        
+    </LinearLayout>
+
+
+    <RelativeLayout
+          android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+               <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content"  android:stretchColumns="*">
+<include android:layout_height="wrap_content" layout="@layout/footer" android:layout_alignParentBottom="true" android:id="@+id/cell" />
+</TableLayout>
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/scan_menu" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentLeft="true" -->
+<!--            android:padding="10dp" -->
+<!--             android:background="@drawable/menuover" -->
+<!--             android:layout_marginLeft="35dp" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:orientation="vertical" > -->
+
+<!--             <Button -->
+<!--                 android:id="@+id/scan_bt" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="center_horizontal" -->
+<!--                 android:background="@drawable/scan_footer" /> -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="center_horizontal" -->
+<!--                 android:text="Scan Ticket" -->
+<!--                 android:textColor="#000000" -->
+<!--                 android:textStyle="bold" -->
+<!--                 android:typeface="sans" /> -->
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+   
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentLeft="true" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_marginLeft="10dp" -->
+<!--             android:orientation="vertical" > -->
+
+<!--             <Button -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="center_horizontal" -->
+<!--                 android:background="@drawable/set" /> -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="center_horizontal" -->
+<!--                 android:text="Setting" -->
+<!--                 android:textColor="#000000" -->
+<!--                 android:textStyle="bold" -->
+<!--                 android:typeface="sans" /> -->
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/list_menu" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:padding="10dp" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:background="@drawable/menuover" -->
+<!--             android:layout_marginRight="35dp" -->
+<!--             android:orientation="vertical" > -->
+
+<!--             <Button -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="center_horizontal" -->
+<!--                 android:background="@drawable/list_logo_footer" /> -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="center_horizontal" -->
+<!--                 android:text="Ticket List" -->
+<!--                 android:textColor="#000000" -->
+<!--                 android:textStyle="bold" -->
+<!--                 android:typeface="sans" /> -->
+<!--         </LinearLayout> -->
+    </RelativeLayout>
+<LinearLayout android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"   
+      android:layout_below="@+id/header"    
+      android:layout_marginTop="5dp"
+      android:layout_above="@+id/footer"
+        android:layout_marginBottom="5dp">
+    <ListView
+     
+        android:id="@android:id/list"
+         android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+    
+        android:divider="#b5b5b5" >
+            
+    </ListView>
+</LinearLayout>
+ 
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout"
+        android:layout_margin="10dp"
+       android:background="@null"
+       android:textSize="12sp"
+       android:typeface="sans"
+       android:textStyle="bold"
+       android:text="Logout"
+        android:textColor="@drawable/logutbtother"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+     <TextView android:visibility="invisible" android:id="@+id/holo_text" android:layout_width="wrap_content" android:gravity="center_horizontal" 
+         android:layout_height="wrap_content" android:text="There is no event available"
+     android:layout_centerInParent="true" android:textColor="#000000" android:textSize="25sp" android:textStyle="bold" android:typeface="sans"/>
+    
+    <ProgressBar
+                android:id="@+id/progressBar1"
+                android:visibility="invisible"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+</RelativeLayout>

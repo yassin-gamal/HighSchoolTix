@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+       android:background="#ffffff"
+     android:layout_height="fill_parent">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header" >
+
+             <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout"
+        android:layout_margin="10dp"
+       android:background="@null"
+       android:textSize="12sp"
+       android:typeface="sans"
+       android:textStyle="bold"
+       android:text="Logout"
+        android:textColor="@drawable/logutbtother"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+        <!-- <ProgressBar -->
+        <!-- android:id="@+id/progressBar1" -->
+
+
+        <!-- android:layout_width="30dp" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginRight="10dp" -->
+        <!-- android:layout_centerInParent="true" -->
+        <!-- android:layout_height="30dp" /> -->
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ruler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="@drawable/headerruler" />
+    
+
+    <FrameLayout
+        android:id="@+id/coverimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:background="@drawable/demyimage"
+        android:layout_below="@+id/ruler"
+        
+       >
+<!--           <ImageView  -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="150dp" -->
+<!--         android:scaleType="centerCrop" -->
+      
+<!--         android:layout_gravity="center_horizontal" -->
+       
+<!--          android:background="@drawable/hitic"> -->
+<!-- </ImageView> -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/checkbar"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/eventname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laad adsf adsfk "
+                    android:textColor="#FFFFFF"
+                    
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="invisible"
+                    android:text="26 julay 2013 indore"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/eventname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                          android:layout_gravity="center_vertical"
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      
+                        android:layout_marginLeft="10dp"
+                        
+                        android:text="10 hrs"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coverimage"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/numberofticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/promobg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ticket_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="TICKET SECTION"
+                android:textColor="#282828"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <Spinner
+                android:id="@+id/spnner1"
+                android:layout_width="wrap_content"
+               android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ticket_text"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/number" />
+
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/detaillayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/promobg"
+            android:orientation="horizontal" >
+            
+            <LinearLayout
+                android:layout_centerVertical="true"
+                 android:layout_alignParentLeft="true"  
+                 android:layout_width="wrap_content" 
+                 android:layout_height="wrap_content" 
+                 android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/odertext"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+               android:paddingLeft="10dp"
+                android:text="PROCESSING FEE"
+                android:textColor="#282828"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+
+            <TextView
+                android:id="@+id/oderfee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                 android:paddingLeft="10dp"
+                 android:textColor="#ef4f23"
+                 android:text="$0.99"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+            </LinearLayout>
+          <LinearLayout android:layout_centerVertical="true" android:layout_alignParentRight="true" 
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content" 
+               android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/typetext"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:text="TICKET TYPE"
+                android:textColor="#282828"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+<!--             <ImageView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_alignParentRight="true" -->
+<!--                 android:layout_marginRight="10dp" -->
+<!--                 android:background="@drawable/arrow" /> -->
+
+            <TextView
+                android:id="@+id/ticket_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+            android:paddingRight="10dp"
+                 android:textColor="#ef4f23"
+                 android:text="$0.99"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/detaillayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/accountbg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/eventname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:text="NAME"
+                android:layout_gravity="center_vertical"
+                android:textColor="#282828"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/name"
+                 android:singleLine="true"
+                 android:maxLength="30"
+                 android:layout_gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_below="@+id/eventname"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+               />
+     </LinearLayout>
+     
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/accoutlayout" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="center_vertical|center_horizontal" -->
+<!--             android:background="@drawable/promobg" -->
+<!--             android:visibility="invisible" -->
+<!--             android:orientation="horizontal" > -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/eventname" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="center_vertical" -->
+<!--                 android:layout_marginLeft="10dp" -->
+<!--                 android:text="PROMOCODE" -->
+<!--                 android:textColor="#282828" -->
+<!--                 android:textSize="12sp" -->
+<!--                 android:textStyle="bold" -->
+<!--                 android:typeface="serif" /> -->
+<!--                <EditText -->
+<!--                    android:id="@+id/promocodeEditext" -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="40dp" -->
+<!--                 android:singleLine="true" -->
+<!--                 android:layout_gravity="center_vertical|center_horizontal" -->
+<!--                 android:layout_marginLeft="5dp" -->
+<!--                 android:layout_marginRight="5dp" -->
+<!--                 android:layout_weight="1" /> -->
+<!--                   <ImageButton -->
+<!--             android:id="@+id/promocodebt" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:background="@null" -->
+<!--             android:layout_marginRight="5dp" -->
+<!--             android:src="@drawable/piggybank" -->
+<!--             android:layout_gravity="center_vertical"  /> -->
+<!--                   <ImageButton -->
+<!--             android:id="@+id/promocodebt" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:background="@null" -->
+<!--             android:src="@android:drawable/ic_menu_search" -->
+<!--             android:layout_gravity="center_vertical"  /> -->
+
+         
+<!--         </LinearLayout> -->
+    </LinearLayout>
+    <!-- <ProgressBar -->
+    <!-- android:id="@+id/progressBar1" -->
+
+
+    <!-- android:layout_width="30dp" -->
+    <!-- android:layout_marginRight="10dp" -->
+    <!-- android:layout_centerInParent="true" -->
+    <!-- android:layout_height="30dp" /> -->
+
+    <RelativeLayout
+        android:id="@+id/detaillayout"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+       android:paddingBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1" >
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="TOTAL:"
+            android:textColor="#282828"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/cart_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+         android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/total"
+            android:text="$ 117.00"
+            android:textColor="#ef4f23"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/bookbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            android:layout_toRightOf="@+id/cart_amount"
+             android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:text="Add to cart"
+            android:background="@drawable/bookbt"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+<ProgressBar
+                android:id="@+id/progressBar1"
+                android:visibility="invisible"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+<LinearLayout
+            android:id="@+id/manual_entry"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/coverimage"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/promobg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/eventname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:text="MANUAL TICKET ENTRY"
+                android:layout_gravity="center_vertical"
+                android:textColor="#282828"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/manualEditextbox"
+                 android:singleLine="true"
+                 android:maxLength="30"
+                 android:layout_gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_below="@+id/eventname"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+               />
+     </LinearLayout>
+</RelativeLayout>
+</ScrollView>

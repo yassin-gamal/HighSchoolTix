@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+   
+		<LinearLayout 
+		    android:id="@+id/header"
+		    android:layout_width="wrap_content"
+		     android:layout_height="wrap_content" 
+		     android:layout_alignParentTop="true" 
+		     android:background="@drawable/header">
+		</LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+  		android:layout_centerInParent="true"
+        android:background="#ffffff">
+        <!--  View Title Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            
+        android:layout_gravity="center_horizontal"
+        android:text=" Forgot Password"
+        android:textSize="20sp" 
+		android:typeface="serif"
+		android:textStyle="bold"
+		android:textColor="#fa6819"  />
+        <!--  Email Label -->
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+             android:textColor="#383838"
+            android:textSize="12sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter your email address. A link will be sent to your email for password reset." />
+        <!--  Email TextField -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" 
+            android:singleLine="true"
+            
+            android:drawableLeft="@drawable/email"
+         
+             android:hint="  Email"
+            android:layout_marginTop="5dp"
+    		android:layout_marginLeft="10dp"
+    		android:layout_marginRight="10dp"
+            android:typeface="sans" 
+            android:ellipsize="end"
+            android:paddingLeft="5.0dip" 
+            android:paddingRight="3.0dip"
+             
+              
+              />
+ 
+        <!--  Password Label -->
+        
+        <!--  Password TextField -->
+        
+ 
+        <!--  Error message -->
+
+        
+
+        <TextView android:id="@+id/login_error"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#e30000"
+                    android:padding="10dip"
+                    android:textStyle="bold"/>
+        
+        
+         <!--  Link to Registration Screen -->
+ 
+        <!--  Login Button -->
+        
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button
+            android:id="@+id/nextbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:text="Next" 
+              android:textSize="12sp"
+              android:textStyle="bold"
+              android:textColor="#000000"
+              android:layout_marginLeft="3dp"
+              android:layout_marginRight="3dp"
+             
+              android:typeface="sans" 
+              android:ellipsize="end"
+              android:background="@drawable/btbg"
+              />
+<!--             <Button -->
+<!--             android:id="@+id/singup_button" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--               android:text="Sign Up"  -->
+<!--                  android:textSize="18sp" -->
+<!--               android:textStyle="bold" -->
+<!--               android:textColor="#ffffff" -->
+<!--                android:layout_marginLeft="3dp" -->
+<!--               android:layout_marginRight="3dp" -->
+<!--               android:layout_weight="1" -->
+<!--               android:typeface="sans"  -->
+<!--               android:ellipsize="end" -->
+<!--               android:background="@drawable/bt_bg" -->
+<!--               /> -->
+        </LinearLayout>
+             
+       
+    </LinearLayout>
+    
+ <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/network_layout"
+           android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/footerbg" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/net"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Acuquring net connection....." />
+                
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignBottom="@+id/net"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ruler" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+               android:visibility="invisible"
+                android:id="@+id/canclenet"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="5dp"
+                android:background="@drawable/cancelo" />
+                  <TextView
+                    android:id="@+id/netnot"
+                  
+                    android:layout_width="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:visibility="invisible"
+                      android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:text="Internet connection is not available.." />
+
+        </RelativeLayout>
+        
+</RelativeLayout>

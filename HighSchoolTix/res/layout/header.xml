@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+    <TableLayout android:layout_width="fill_parent" android:layout_alignParentTop="true" android:layout_height="wrap_content" android:stretchColumns="*">
+        <TableRow android:layout_width="wrap_content"  android:background="#FFFFFF" android:layout_height="10px" android:gravity="center|center_vertical|center_horizontal">
+            <ImageView android:id="@+id/icon" android:src="@drawable/ic_launcher" android:layout_width="wrap_content" android:layout_gravity="left" android:layout_height="wrap_content"/>
+            <TextView android:text="Mobile Property" android:id="@+id/txtTitlevalue" android:textColor="#800517"  android:textSize="18px" android:layout_height="wrap_content" android:gravity="center|left" android:textStyle="bold" android:layout_width="wrap_content" android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>  
+</RelativeLayout>

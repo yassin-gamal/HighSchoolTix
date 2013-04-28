@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+      android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/header"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header" >
+
+        <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout"
+        android:layout_margin="10dp"
+       android:background="@null"
+       android:textSize="15sp"
+       android:typeface="sans"
+       android:textStyle="bold"
+       android:visibility="invisible"
+       android:text="Logout"
+        android:textColor="@drawable/logutbtother"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+        <Button
+            android:id="@+id/back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+          android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:text="Event List"
+              android:visibility="invisible"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+<!--       <ProgressBar -->
+<!--             android:id="@+id/progressBar1" -->
+            
+<!--             android:layout_width="30dp" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_marginRight="10dp" -->
+<!--             android:layout_centerInParent="true" -->
+<!--             android:layout_height="30dp" /> -->
+        
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="right"
+            android:layout_below="@+id/header" 
+            android:paddingRight="10dp"
+            android:background="@drawable/searchbg"
+            android:orientation="horizontal" >
+
+            
+
+         
+
+                    <TextView
+                        android:id="@+id/eventname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time left to purchase"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginRight="10dp"
+                        android:textSize="12sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/countdown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:layout_gravity="center_horizontal|center_vertical|right"
+                        android:text="10 hrs"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+               
+           
+        </LinearLayout>
+        
+    
+    <RelativeLayout  android:layout_below="@+id/timer" android:id="@+id/namebar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView 
+    android:layout_marginTop="5dp"
+     android:paddingLeft="10dp"
+    android:id="@+id/eventname"
+    android:layout_alignParentLeft="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  
+    android:textSize="12sp"
+      android:textColor="#ef4f23"
+    android:textStyle="bold"
+    android:text="Event name"/>
+        
+        
+        <LinearLayout android:layout_toLeftOf="@+id/ttt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+            
+                   <TextView 
+    android:layout_marginTop="5dp"
+     android:paddingLeft="18dp"
+    android:id="@+id/eventname"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   
+    android:textSize="12sp"
+        android:textColor="#ef4f23"
+    android:textStyle="bold"
+    android:text="Price"/>
+  
+                           <TextView 
+    android:layout_marginTop="5dp"
+     android:paddingLeft="22dp"
+    android:id="@+id/eventname"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   
+    android:textSize="12sp"
+       android:textColor="#ef4f23"
+    android:textStyle="bold"
+    android:text="Qnt"/>
+        </LinearLayout>
+        
+        
+        
+        
+                <TextView 
+    android:layout_marginTop="5dp"
+     android:paddingLeft="18dp"
+     android:layout_marginRight="10dp"
+    android:id="@+id/ttt"
+    android:layout_alignParentRight="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   
+    android:textSize="12sp"
+      android:textColor="#ef4f23"
+    android:textStyle="bold"
+    android:text="Total"/>
+</RelativeLayout>
+
+    <View android:layout_below="@+id/namebar"  android:id="@+id/ruler" android:layout_width="fill_parent" android:layout_height="2dp" android:background="@drawable/headerruler"/>
+    
+    <LinearLayout android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"   
+      android:layout_below="@+id/ruler"    
+      android:layout_above="@+id/footer"
+    >
+    <ListView
+     
+        android:id="@android:id/list"
+         android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:divider="#b5b5b5" >       
+    </ListView>
+</LinearLayout>
+   <RelativeLayout
+          android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footer"
+         >
+    
+       <RelativeLayout
+        android:id="@+id/detaillayout"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1" >
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Cart Total:"
+            android:layout_toLeftOf="@+id/cart_amount"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/cart_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+             android:layout_centerVertical="true"
+             android:layout_alignParentRight="true"
+            android:text="$ 117.00"
+            android:textColor="#ef4f23"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/bookbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+           
+            android:text="Checkout"
+            android:background="@drawable/bookbt"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    </RelativeLayout>
+    
+   <LinearLayout android:visibility="invisible" android:id="@+id/refresh" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:orientation="vertical">
+   <Button 
+       android:id="@+id/refreshbt"
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content" 
+       android:background="@drawable/backmain" 
+       android:layout_centerInParent="true" 
+       android:layout_gravity="center_horizontal"
+       android:layout_marginTop="20dp" />
+   <TextView 
+    android:layout_marginTop="5dp"
+     android:paddingLeft="10dp"
+    android:id="@+id/eventname"
+    android:layout_alignParentLeft="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:layout_gravity="center_horizontal"
+    android:textSize="15sp"
+      android:textColor="#000000"
+    android:textStyle="bold"
+    android:text="Cart refresh"/>
+   
+   </LinearLayout>
+</RelativeLayout>
