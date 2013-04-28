@@ -197,7 +197,7 @@ public class Login extends Activity {
 							if(re.length()==0)
 							{
 								Toast.makeText(getBaseContext(), "problem in connection....",Toast.LENGTH_SHORT).show();
-//								new ShowDialogAsyncTask().execute();
+								new ShowDialogAsyncTask().execute();
 							}
 							else
 							{
