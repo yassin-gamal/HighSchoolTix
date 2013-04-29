@@ -279,9 +279,7 @@ public class Home extends Activity
 			}
 	    }
   
-	    
 
-	    
 	    
 	    private void Save_Login(String user_name,String password)
 		  {
@@ -296,14 +294,9 @@ public class Home extends Activity
 	    @Override
 	    public void onBackPressed() 
 	   {
-		
-	    
-		   super.onBackPressed();
-
-			   startActivity(new Intent(Home.this,MainScreen.class));
-	       	
- 
-	     
+	    	super.onBackPressed();
+	    	startActivity(new Intent(Home.this,MainScreen.class));
+	       		     
 	     
 	    }
 

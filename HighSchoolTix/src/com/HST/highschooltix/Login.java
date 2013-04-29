@@ -183,26 +183,7 @@ public class Login extends Activity {
 				{
 					 if(net_check)
 				     {
-
-							login_Button.setEnabled(false);
-							boolean c=true;
-							String re = null;
-							try {
-								re=CustomHttpClient.executeHttpGet(ur);
-								System.out.println("re="+re);
-							} catch (Exception e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}
-							if(re.length()==0)
-							{
-								Toast.makeText(getBaseContext(), "problem in connection....",Toast.LENGTH_SHORT).show();
-								new ShowDialogAsyncTask().execute();
-							}
-							else
-							{
-								new ShowDialogAsyncTask().execute();
-							}
+						 new ShowDialogAsyncTask().execute();
 				     }
 					 else
 					 {
