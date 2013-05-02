@@ -143,6 +143,7 @@ public class TicketListAll extends Activity
 				
 			}
 		});
+         
          ticketLayout.setOnClickListener(new OnClickListener() 
          {
 			
@@ -435,11 +436,10 @@ public class TicketListAll extends Activity
     @Override
     public void onBackPressed() 
    {
-	
-    
-	   super.onBackPressed();
-      startActivity(new Intent(TicketListAll.this,Home.class));
-      finish();
+
+	  super.onBackPressed();
+	  startActivity(new Intent(TicketListAll.this,Home.class));
+	  finish();
     }
 
 

@@ -79,11 +79,10 @@
           android:id="@+id/footer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-         >
+        android:layout_alignParentBottom="true" >
         <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content"  android:stretchColumns="*">
-<include android:layout_height="wrap_content" layout="@layout/footer" android:layout_alignParentBottom="true" android:id="@+id/cell" />
-</TableLayout>
+		<include android:layout_height="wrap_content" layout="@layout/footer" android:layout_alignParentBottom="true" android:id="@+id/cell" />
+	 	</TableLayout>
 
 <!--         <LinearLayout -->
 <!--             android:id="@+id/scan_menu" -->

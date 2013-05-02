@@ -215,10 +215,7 @@ public class EventListScan extends Activity
 			{
 				
 				 Intent intent = new Intent("com.google.zxing.client.android.SCAN");
-		        startActivityForResult(intent, 0);
-				// TODO Auto-generated method stub
-				
-
+				 startActivityForResult(intent, 0);
 			}
 		});
         

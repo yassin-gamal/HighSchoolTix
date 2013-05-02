@@ -110,6 +110,10 @@ public class CustomHttpClient {
 	//    JSONArray jArray;	  
 	   
 	    try {
+//	    	System.setProperty("http.proxyHost", "http://obscure-depths-9305.herokuapp.com/");
+//	    	System.setProperty("http.proxyPort", "1234");
+//	    	HttpClient client = new DefaultHttpClient();
+//            
 	        HttpClient client = getHttpClient();
 	        HttpGet request = new HttpGet();
 	        request.setURI(new URI(url));

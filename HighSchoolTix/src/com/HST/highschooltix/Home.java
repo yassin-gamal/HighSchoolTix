@@ -83,6 +83,7 @@ public class Home extends Activity
         
         scanlayout.setOnClickListener(new OnClickListener() 
         {
+        	
 			
 			public void onClick(View v) 
 			{
