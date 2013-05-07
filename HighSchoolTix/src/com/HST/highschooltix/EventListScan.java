@@ -304,7 +304,6 @@ public class EventListScan extends Activity
 		        listView.setAdapter(adapter);
 		        if (DataList.size()==0) 
 		        {
-		      
 		        	holoTextView.setVisibility(View.VISIBLE);
 				}
 		     
@@ -574,9 +573,6 @@ public class EventListScan extends Activity
     	    	responce=customHttpClient.executeHttpGet(URL);
     	    	 res=responce.toString();
     	    	System.out.println("responce of service is="+res);
-    	    	
-    	       
-    	    	
     	    	
     	    	}catch (Exception e) 
     	    	{

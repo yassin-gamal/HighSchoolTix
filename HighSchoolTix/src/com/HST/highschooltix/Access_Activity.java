@@ -163,7 +163,7 @@ public class Access_Activity extends Activity
         	accessTextView.setText("Access Granted");
         	belowaccessTextView.setText("Your access granted");
         	okButton.setBackgroundResource(R.drawable.ok_bg);
-        	okButton.setText("Ok");
+        	okButton.setText("Menu");
         	typeLayout.setVisibility(View.VISIBLE);
         	type_name.setText("Type :");
         	typeTextView.setText(type);
@@ -177,7 +177,7 @@ public class Access_Activity extends Activity
         	accessTextView.setText("Access Denied !");
         	belowaccessTextView.setText("Your don't have permission to access scan");
         	okButton.setBackgroundResource(R.drawable.redbt);
-        	okButton.setText("Ok");
+        	okButton.setText("Menu");
         	typeTextView.setText("");
         	typeLayout.setVisibility(View.INVISIBLE);
         	
@@ -231,7 +231,7 @@ public class Access_Activity extends Activity
         	type_name.setText("Holder name :");
         	dateTextView.setText(changer.DateWantedFromate(format.format(date)).toString());
         	typeTextView.setText(holder_name);
-        	okButton.setText("Ok");
+        	okButton.setText("Menu");
         	
         }
 //        backButton=(Button) findViewById(R.id.back_bt);
@@ -252,17 +252,10 @@ public class Access_Activity extends Activity
 			public void onClick(View v)
 			{
 				// TODO Auto-generated method stub
-				
-				 Intent intent = new Intent("com.google.zxing.client.android.SCAN");
-			        startActivityForResult(intent, 0);
-				
-				
-				
+				 Intent intent=new Intent(Access_Activity.this,MainScreen.class);
+			     startActivityForResult(intent, 0);
 			}
 		});
-        
-
-       
     }
     
     public String Check_ticket(String Skdu, String auth)

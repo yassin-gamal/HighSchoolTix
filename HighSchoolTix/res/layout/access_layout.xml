@@ -295,7 +295,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/ok_bg"
-                android:text="Ok"
+                android:text="Menu"
                 android:textColor="#ffffff"
                 android:textSize="22sp"
                 android:textStyle="bold"
