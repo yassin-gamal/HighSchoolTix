@@ -61,7 +61,7 @@ public class MainScreen extends Activity
 				{
 					// TODO Auto-generated method stub
 					//Toast.makeText(getBaseContext(), "SCAN",Toast.LENGTH_SHORT).show();
-					startActivity(new Intent(MainScreen.this,Home.class));
+					startActivity(new Intent(MainScreen.this,EventListScan.class));
 					finish();
 					
 				}

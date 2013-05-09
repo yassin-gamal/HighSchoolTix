@@ -538,7 +538,7 @@ public class EventListScan extends Activity
     
 	   super.onBackPressed();
 
-		   startActivity(new Intent(EventListScan.this,Home.class));
+		   startActivity(new Intent(EventListScan.this,MainScreen.class));
        	
  
      
