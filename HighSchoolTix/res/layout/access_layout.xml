@@ -288,27 +288,39 @@
                     android:textStyle="bold"
                     android:typeface="sans" />
             </LinearLayout>
-            <Button
-                android:id="@+id/okbt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/ok_bg"
-                android:text="Menu"
-                android:textColor="#ffffff"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:typeface="sans" />
+
         </LinearLayout>
 
-        
-        
-        
-        
-        
-        
-        
+        <Button
+            android:id="@+id/mnbt"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/okbt"
+            android:layout_alignBottom="@+id/scanbt"
+            android:layout_alignLeft="@+id/access_text_layout"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/ok_bg"
+            android:text="Menu"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/okbt"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/access_text_layout"
+            android:layout_below="@+id/access_text_layout"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/ok_bg"
+            android:text="Ok"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
     </RelativeLayout>
 
 <!--     <TextView -->

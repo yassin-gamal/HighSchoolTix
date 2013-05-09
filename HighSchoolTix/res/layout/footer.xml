@@ -8,24 +8,25 @@
 <TableLayout android:gravity="center_vertical|center_horizontal|bottom" android:layout_gravity="bottom|center_vertical|center_horizontal" android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:id="@+id/tableLayout1" android:layout_height="wrap_content" android:stretchColumns="*">
     <TableRow  android:paddingTop="2dp" android:layout_width="fill_parent" android:background="@drawable/footer" android:gravity = "center_vertical|center_horizontal">
        
-         <LinearLayout android:id="@+id/boxfiicebtlayout" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
-        		<ImageView android:id="@+id/footerMessageIcon" android:layout_width="wrap_content" android:layout_weight="70" android:layout_gravity="bottom|center_horizontal" android:src="@drawable/boxofficefootericon" android:layout_height="wrap_content"/>
-       			<TextView android:textSize="10sp" android:text="Box Office" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-       	</LinearLayout>
-        <LinearLayout android:id="@+id/scanbtlayout" android:clickable="true" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+          <LinearLayout android:id="@+id/ticketbtlayout" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+   			</LinearLayout>
+   			
+          
+          <LinearLayout android:id="@+id/scanbtlayout" android:clickable="true" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
 	       	 <ImageView android:clickable="false" android:id="@+id/footerCalendarIcon" android:layout_width="wrap_content" android:layout_weight="70" android:layout_gravity="bottom|center_horizontal" android:src="@drawable/scantickerfootericon" android:layout_height="wrap_content"/>
 	         <TextView android:textSize="10sp" android:clickable="false" android:text="Scan Ticket" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
         </LinearLayout>
         
+         <LinearLayout android:id="@+id/boxfiicebtlayout" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+        		<ImageView android:id="@+id/footerMessageIcon" android:layout_width="wrap_content" android:layout_weight="70" android:layout_gravity="bottom|center_horizontal" android:src="@drawable/boxofficefootericon" android:layout_height="wrap_content"/>
+       			<TextView android:textSize="10sp" android:text="Box Office" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+       	</LinearLayout>
+        
+        
          <LinearLayout android:id="@+id/eventbtlayout" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
-            <ImageView android:id="@+id/footerAccountsIcon" android:layout_width="wrap_content" android:layout_weight="70" android:layout_gravity="bottom|center_horizontal" android:src="@drawable/eventfootericon" android:layout_height="wrap_content"/>
-         	<TextView android:textSize="10sp" android:text="Event List" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
          </LinearLayout>
         
-         <LinearLayout android:id="@+id/ticketbtlayout" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
-         	<ImageView  android:id="@+id/footerListIcon" android:layout_width="wrap_content" android:layout_weight="70" android:layout_gravity="bottom|center_horizontal" android:src="@drawable/ticketlistfootericon" android:layout_height="wrap_content"/>
-   			<TextView android:textSize="10sp" android:text="Ticket List" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-   			</LinearLayout>
+       
          </TableRow>
 </TableLayout>  
 </LinearLayout>

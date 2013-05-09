@@ -54,6 +54,7 @@ public class Access_Activity extends Activity
 	TextView accessTextView;
 	TextView belowaccessTextView;
 	Button okButton;
+	Button menuButton;
 	String type;
 	TextView typeTextView;
 	TextView testTextView;
@@ -85,6 +86,7 @@ public class Access_Activity extends Activity
         belowaccessTextView=(TextView) findViewById(R.id.access_below);
         typeTextView=(TextView) findViewById(R.id.type);
         okButton=(Button) findViewById(R.id.okbt);
+        menuButton=(Button) findViewById(R.id.mnbt);
         typeLayout=(LinearLayout) findViewById(R.id.type_layout);
        // testTextView=(TextView) findViewById(R.id.titeltext);
         type_name=(TextView) findViewById(R.id.type_name);
@@ -163,7 +165,9 @@ public class Access_Activity extends Activity
         	accessTextView.setText("Access Granted");
         	belowaccessTextView.setText("Your access granted");
         	okButton.setBackgroundResource(R.drawable.ok_bg);
-        	okButton.setText("Menu");
+        	okButton.setText("Ok");
+        	menuButton.setBackgroundResource(R.drawable.ok_bg);
+        	menuButton.setText("Menu");
         	typeLayout.setVisibility(View.VISIBLE);
         	type_name.setText("Type :");
         	typeTextView.setText(type);
@@ -177,7 +181,9 @@ public class Access_Activity extends Activity
         	accessTextView.setText("Access Denied !");
         	belowaccessTextView.setText("Your don't have permission to access scan");
         	okButton.setBackgroundResource(R.drawable.redbt);
-        	okButton.setText("Menu");
+        	okButton.setText("Ok");
+        	menuButton.setBackgroundResource(R.drawable.redbt);
+        	menuButton.setText("Menu");
         	typeTextView.setText("");
         	typeLayout.setVisibility(View.INVISIBLE);
         	
@@ -193,6 +199,7 @@ public class Access_Activity extends Activity
         	
         	linearLayout1.setBackgroundResource(R.drawable.already);
         	okButton.setBackgroundResource(R.drawable.ok_bg);
+        	menuButton.setBackgroundResource(R.drawable.ok_bg);
         	accessTextView.setText("");
         	typeLayout.setVisibility(View.VISIBLE);
         	belowaccessTextView.setText("Ticket already scanned");
@@ -231,7 +238,8 @@ public class Access_Activity extends Activity
         	type_name.setText("Holder name :");
         	dateTextView.setText(changer.DateWantedFromate(format.format(date)).toString());
         	typeTextView.setText(holder_name);
-        	okButton.setText("Menu");
+        	okButton.setText("Ok");
+        	menuButton.setText("Menu");
         	
         }
 //        backButton=(Button) findViewById(R.id.back_bt);
@@ -246,7 +254,7 @@ public class Access_Activity extends Activity
 //			}
 //		});
         
-        okButton.setOnClickListener(new OnClickListener() 
+        menuButton.setOnClickListener(new OnClickListener() 
         {
 			
 			public void onClick(View v)
@@ -254,6 +262,16 @@ public class Access_Activity extends Activity
 				// TODO Auto-generated method stub
 				 Intent intent=new Intent(Access_Activity.this,MainScreen.class);
 			     startActivityForResult(intent, 0);
+			}
+		});
+        
+        okButton.setOnClickListener(new OnClickListener() 
+        {
+			
+			public void onClick(View v)
+			{
+				Intent intent = new Intent("com.google.zxing.client.android.SCAN");
+		        startActivityForResult(intent, 0);
 			}
 		});
     }
