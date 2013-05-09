@@ -42,7 +42,7 @@
     <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/header" android:id="@+id/ruler" android:background="@drawable/headerruler"/>
     
       <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/coverimage" android:layout_width="fill_parent" android:layout_height="wrap_content"  android:layout_below="@+id/ruler">
-        <ImageView android:layout_centerHorizontal="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/demyimagetwo" /> 
+        <ImageView android:layout_centerHorizontal="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/logo" /> 
     </RelativeLayout>       
 
     <ScrollView

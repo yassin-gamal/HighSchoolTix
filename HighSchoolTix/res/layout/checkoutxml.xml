@@ -41,13 +41,19 @@
         <!-- android:layout_height="30dp" /> -->
     </RelativeLayout>
 
+    <ImageView
+        android:id="@+id/ruler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="@drawable/headerruler" />
     
 
     <FrameLayout
         android:id="@+id/coverimage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-         android:background="@drawable/demyimage"
+        android:background="@drawable/logo2"
         android:layout_below="@+id/ruler"
         
        >

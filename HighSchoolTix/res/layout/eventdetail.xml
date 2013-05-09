@@ -39,16 +39,19 @@
             android:layout_height="30dp" />
  </RelativeLayout>
    
-    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/header" android:id="@+id/ruler" android:background="@drawable/headerruler"/>       
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/header" android:id="@+id/ruler" android:background="@drawable/headerruler"/>
+    
+    <LinearLayout android:gravity="center"  android:id="@+id/coverimage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/logo" android:layout_below="@+id/ruler">
+<!--         <ImageView  android:layout_width="wrap_content" android:layout_height="match_parent" android:background="@drawable/tchgighmascot"/> -->
+    </LinearLayout>       
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/footer"
-        android:layout_below="@+id/ruler"
-        android:background="#ffffff"
-        android:paddingBottom="5dp" >
-
+      android:background="#ffffff"
+      android:layout_below="@+id/coverimage"
+      android:layout_above="@+id/footer"
+    android:layout_width="match_parent" 
+    android:paddingBottom="5dp"
+    android:layout_height="wrap_content">
     <RelativeLayout 
     android:layout_width="match_parent"
     android:background="#ffffff"
